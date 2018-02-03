@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="@drawable/detalle1"
+             x:Class="EvaluacionFinalXF.pageDetail">
+             <ContentPage.Content>
+                 <StackLayout Padding="5,0,5,0">
+                     <StackLayout Padding="0,30,0,0">
+                         <Label
+                         x:Name="lblNombre"
+                         FontSize="40"
+                         TextColor="#001942"
+                         Text="NombrePelicula"
+                         VerticalOptions="Center" 
+                         HorizontalOptions="FillAndExpand" />
+                     </StackLayout>
+                     <StackLayout Padding="0,30,0,30">
+                         <Label
+                         x:Name ="lblDescripcion"
+                         FontSize="20"
+                         TextColor="#001942"
+                         Text="Descripción"
+                         VerticalOptions="Center"
+                         HorizontalOptions="FillAndExpand"
+                         />
+                         <Label
+                             x:Name ="lblCategoria"
+                             TextColor="#001942"
+                             Text="catergoria"
+                             FontSize="20"
+                             VerticalOptions="Center"
+                             HorizontalOptions="FillAndExpand"
+                         />
+                         <Label
+                            x:Name ="lblRating"
+                            Text="rating"
+                            TextColor="#001942"
+                            FontSize="20"
+                            VerticalOptions="Center"
+                            HorizontalOptions="FillAndExpand"
+                         />
+                     </StackLayout>
+                     <StackLayout>
+                         <Image
+                          x:Name="imgImagen"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                             WidthRequest="400"
+                             HeightRequest="200"
+                     />
+                     </StackLayout>
+             
+                 </StackLayout>
+             </ContentPage.Content>
+</ContentPage>

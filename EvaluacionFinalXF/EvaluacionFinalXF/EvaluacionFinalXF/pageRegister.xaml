@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="@drawable/registro"
+             x:Class="EvaluacionFinalXF.pageRegister">
+    <ContentPage.Content>
+        <StackLayout Padding="0,10,0,0">       
+
+            <StackLayout Padding="20,0,20,0">
+
+
+                <Label Text="Name:"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End" />
+
+                <Entry x:Name="entRegisterName"
+                       Keyboard="Text"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       Placeholder="Write your name..."/>
+
+                <Label Text="Username:"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"/>
+
+                <Entry x:Name="entRegisterUsername"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       Keyboard="Text"
+                       Placeholder="Write your username..."/>
+                
+                <Label Text="Telphone:"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"/>
+
+                <Entry x:Name="entRegisterTelphone"
+                       Keyboard="Numeric"
+                       
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       Placeholder="Write your phone..."></Entry>
+
+                <Label Text="E-mail:"
+                       FontSize="15"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"/>
+
+                <Entry x:Name="entRegisterEmail"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       Keyboard="Email"
+                       Placeholder="Write your email..." />
+
+                <Label Text="Password:"
+                       FontSize="15"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"/>
+
+                <Entry x:Name="entRegisterPassword"
+                       Keyboard="Text"
+                       TextColor="White"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       IsPassword="True"
+                       Placeholder="Write your password..." />
+
+                <Label Text="Confirm Password:"
+                       FontSize="15"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"/>
+
+                <Entry x:Name="entRegisterConfirmPassword"
+                       Keyboard="Text"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       IsPassword="True"
+                       Placeholder="Confirm your password..." />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="10,0,10,0">
+                <StackLayout  WidthRequest="170" HorizontalOptions="Start" >
+
+                    <Button x:Name="btnRegisterClean "
+                        Text="Clean" />
+
+                </StackLayout>
+                <StackLayout   WidthRequest="170" HorizontalOptions="Fill" >
+
+                    <Button x:Name="btnRegisterRegister" 
+                        Text="Register" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

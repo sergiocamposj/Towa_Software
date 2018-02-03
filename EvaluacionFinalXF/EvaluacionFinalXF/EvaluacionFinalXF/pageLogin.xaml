@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="@drawable/log"
+             x:Class="EvaluacionFinalXF.pageLogin">
+    <ContentPage.Content>
+        <StackLayout Padding="0,120,0,0">          
+
+            <StackLayout  Padding="20,5,20,50">
+                
+
+                <Label Text="User:"
+                       FontSize="20"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"
+                       Margin="5"/>
+
+                <Entry x:Name="entUser"
+                       Keyboard="Text"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Placeholder="Write your username..."
+                       Margin="5"/>
+
+                <Label Text="Password:"
+                       FontSize="20"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"
+                       Margin="5"/>
+
+                <Entry x:Name="entPassword"
+                       Keyboard="Text"
+                       IsPassword="True"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Placeholder="Write your password..." 
+                       Margin="5"/>               
+                          
+            </StackLayout>
+
+            
+            <StackLayout Padding="5">
+                <StackLayout  WidthRequest="165"
+                              Padding="0,0,0,50" 
+                              HorizontalOptions="Center">
+
+                    <Button x:Name="btnLogin"
+                            Clicked="subLogin"
+                            Text="Login"/>
+
+                </StackLayout>
+                <StackLayout WidthRequest="160">
+
+                    <Button x:Name="btnRegister"
+                            HorizontalOptions="Center"
+                            WidthRequest="165"
+                            Text="Create Account" />
+                 </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

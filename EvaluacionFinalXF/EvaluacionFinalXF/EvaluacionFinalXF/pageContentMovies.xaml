@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="@drawable/list"
+             x:Class="EvaluacionFinalXF.pageContentMovies">
+            <ContentPage.Content>
+        <StackLayout Padding="5,5,5,0">            
+            <Label x:Name="lblUserSesion"
+                   HorizontalOptions="Center" 
+                   FontSize="26" 
+                   FontAttributes="Bold" 
+                   TextColor="White"/>        
+        <StackLayout Padding="10,25,10,0">
+                    <ListView x:Name="lstvMovies" CachingStrategy="RecycleElement" ItemTapped="subDetail" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    
+                                    <StackLayout Padding="5,5,5,5">
+                                    <Label Text="{Binding title}" HorizontalOptions="Start" FontSize="22" FontAttributes="Bold" TextColor="White"/>
+                                            <Label Text="{Binding category}" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                                        </StackLayout>                               
+                                    
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            <StackLayout>
+                <Image
+                   x:Name="imgFooter"
+                    Source="@drawable/roku"                    
+                    HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   WidthRequest="400"
+                   HeightRequest="200"
+                     />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
